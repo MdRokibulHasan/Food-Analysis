@@ -1,0 +1,69 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+
+  <!--//==Contact Page Start==//-->
+  <section class="page_single">
+    <div class="clear"></div>
+    <!--//==Contact Form Section Start==//-->
+    <div class="container">
+        <div class="row contact-bottom padTB100">
+            <!--//==Section Heading Start==//-->
+            <div class="col-md-12">
+                <div class="centered-title">
+                    <h2>Add Product <span class="heading-border"></span></h2>
+                    <div class="clear"></div>
+                  
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!--//==Section Heading End==//-->
+            <!--//==Form Area Start==//-->
+            <div class="col-md-12 left-box">
+                <form id="fashion_contactform" method="post">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Product Name<span class="required red-text">*</span></label>
+                                <input type="text" name="name">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Product Price<span class="required red-text">*</span></label>
+                                <input type="email"  name="email" id="exampleInputEmail1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Product Location<span class="required red-text">*</span></label>
+                            <input type="text" name="name">
+                        </div>
+            
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Product Image</label>
+                                <input type="file"  name="web" id="exampleInputWebsite">
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Product description<span class="required red-text">*</span></label>
+                                <textarea name="Message" class="textarea-message" rows="10"></textarea>	
+                            </div>
+                        </div>
+                        <div class="col-sm-12 form-group">
+                            <input type="submit" class="theme-button" value="Add Product">
+                            <div class="fashion_infotext"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--//==Form Area End==//-->
+        </div>
+    </div>
+    <!--//==Contact Form Section End==//-->
+</section>
+<!--//==Contact Page End==//-->
+							
+{% endblock content %}

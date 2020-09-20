@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Kaushan+Script">
+    <link rel="stylesheet" href="{% static 'plugins/menu/css/hover-dropdown-menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/owl-carousel/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/fancymedia/css/jquery.fancybox.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/switcher/switcher.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/color.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+</head>
+<body>
+  
+           <!--//==Preloader Start==//-->
+           <div class="preloader">
+            <div class="cssload-container">
+                <div class="cssload-loading">
+                    <div id="object"><i class="fa fa-cutlery" aria-hidden="true"></i></div>
+                </div>
+                <h4 class="title">Loading</h4>
+            </div>
+        </div>
+        <!--//==Preloader End==//-->  
+        <!--//==Header Start==//-->
+        <header id="main-header">
+            <!--//==Topbar Start==//-->
+            <div id="top-bar" class="wa-theme-bg color-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 pull-left">
+                            <ul class="inline">
+                                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +919993480549</a></li>
+                                <li class="textnormal"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> webaashi@gmail.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6 pull-right">
+                            <ul class="inline">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                            </ul>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//==Topbar End==//-->
+            <!--//==Navbar Start==//-->
+            <div id="main-menu" class="wa-main-menu">
+                <div class="wathemes-menu relative">
+                    <div class="navbar navbar-default navbar-bg-light" role="navigation" style="border-bottom: 1px solid #eee;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="navbar-header">
+                                        <!-- Button For Responsive toggle -->
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span></button> 
+                                        <!-- Logo -->
+                                        <a class="navbar-brand" href="{% url 'index' %}">
+                                       
+                                        </a>
+                                    </div>
+                                    <!-- Navbar Collapse -->
+                                    <div class="navbar-collapse collapse">
+                                        <!-- Right nav Start -->
+                                        
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="{% url 'index' %}">Home</a></li>
+                                            <li><a href="{% url 'about' %}">About</a></li>
+                                            <li><a href="{% url 'signin' %}">Signin</a></li>
+                                            <li><a href="{% url 'index' %}">Signup</a></li>
+                                        </ul>
+
+                                        <form class="form-inline my-lg-0" style="margin-top: 24px;">
+                                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                            <button class="btn btn-outline-success my-sm-0" style="margin-bottom: 15px; padding: 10px;" type="submit">Search</button>
+                                          </form>
+                                        <!-- /.Right nav  End-->
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.col-md-12 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                </div>
+            </div>
+            <!--//==Navbar End==//-->
+        </header>
+
+
+    {% block content %}{% endblock %}
+
+    <footer id="main-footer" class="dark-footer footer-style1">
+                <!--Copyright Footer Block-->
+                <div class="bottom-footer">
+                    <div class="container">
+                        <div class="row pad-s15">
+                            <div class="col-md-12 copy-right text-center">
+                                <p>Copyright &copy; 2020 Restora, All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </footer>
+
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/menu/js/hover-dropdown-menu.js' %}"></script>
+<script src="{% static 'plugins/menu/js/jquery.hover-dropdown-menu-addon.js' %}"></script>
+<script src="{% static 'plugins/owl-carousel/js/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/counter/js/jquery.countTo.js' %}"></script>
+<script src="{% static 'plugins/counter/js/jquery.appear.js' %}"></script>
+<script src="{% static 'plugins/switcher/switcher.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+    </body>
+
+</html>

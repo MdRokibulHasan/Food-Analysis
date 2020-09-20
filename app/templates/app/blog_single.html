@@ -1,0 +1,52 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+
+        <!--//=========Dish Detail Start=========//-->
+        <section class="page_single">
+            <div class="container">
+                <div class="row padTB100">
+                    <div class="prod-info-section">
+                        <div class="clearfix">
+                            <!--Thumbnail Column-->
+                            <div class="carousel-column col-lg-6 col-md-6 col-sm-5 col-xs-12">
+                                <div class="wa-product-main-image marB20">
+                                    <a href="{% static 'img/dishes/dish-detail.jpg' %}" class="fancybox" data-fancybox-group="group" title="Roasted Chicken"> <img src="{% static 'img/dishes/dish-detail.jpg' %}" alt=""> </a>
+                                </div>
+                            </div>
+                            <!--Content Column-->
+                            <div class="content-column col-lg-6 col-md-6 col-sm-7 col-xs-12">
+                                <div class="outer wow fadeInRight">
+                                    <div class="title-box">
+                                        <div class="inner marB30">
+                                            <h2>Roasted Chicken.</h2>
+                                            <span class="price">								
+                                            $100
+                                            <del>$200</del>
+                                            </span>
+                                            <ul class="ratings">
+                                                <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star-half-o"></i></a></li>
+                                            </ul>
+                                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies .</p>
+                                            <p>It has survived not only five centuries, but also the leap into ele ctronic typesetting, remaining essentially un changed The industry's standard dummy text ever 
+                                                since.
+                                            </p>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <!--Options-->
+                                    </div>
+                                    <!--Add-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//=========Dish Detail End=========//-->
+							
+{% endblock content %}

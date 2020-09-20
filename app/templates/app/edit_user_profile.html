@@ -1,0 +1,72 @@
+{% extends "app/base.html" %} {% load static %} {% block content %}
+   <!--//=========Sign in Page Start=========//-->
+   <section class="page_single">
+    <div class="container">
+        <div class="row padTB100">
+            <!--//==Section Heading Start==//-->
+            <div class="col-md-12">
+                <div class="centered-title">
+                    <h2>Update user information<span class="heading-border"></span></h2>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!--//==Section Heading End==//-->
+            <div class="clear"></div>
+            <!--//==Login Section Start==//-->
+            <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2 col-xs-offset-0">
+                <!--//==Form Start==//-->
+                <form action="#" method="post" class="login-form">
+                    <p class="form-row pd-right">
+                        <label for="username"> Name <span class="required">*</span></label>
+                        <input type="text" name="username" id="username" class="form-controller">
+                    </p>
+                    <p class="form-row pd-right">
+                        <label for="username"> email <span class="required">*</span></label>
+                        <input type="email" name="username" id="username" class="form-controller">
+                    </p>
+              
+                    <p class="form-row pd-left">
+                        <label for="phone">Phone <span class="required">*</span></label>
+                        <input type="text" name="phone" id="phone" class="form-controller">
+                    </p>
+           
+
+                    <p class="form-row pd-left">
+                
+                            <label for="birthofdate">Date of Birth <span class="required">*</span></label>
+                            <div class="col-10">
+                              <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                            </div>
+                        
+                    </p>
+
+                    <p class="form-row pd-left">
+                        <label for="address">Address <span class="required">*</span></label>
+                        <input type="text" name="address" id="address" class="form-controller">
+                    </p>
+           
+
+                    <p class="form-row pd-left">
+                        <label for="password">Passwords <span class="required">*</span></label>
+                        <input type="password" name="password" id="password" class="form-controller">
+                    </p>
+                    <p class="form-row pd-left">
+                        <label for="password">Confirm Passwords <span class="required">*</span></label>
+                        <input type="password" name="password" id="password" class="form-controller">
+                    </p>
+
+                    <p class="form-row">
+                        <input type="submit" value="Update" name="Signup" class="theme-button col-md-12 marB20">                           
+                    </p>
+                    
+            
+                </form>
+                <!--//==Form End==//-->
+            </div>
+            <!--//==Login Section End==//-->
+        </div>
+    </div>
+</section>
+<!--//=========Sign up Page End=========//-->
+
+{% endblock content %}

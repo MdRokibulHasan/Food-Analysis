@@ -1,0 +1,48 @@
+{% extends "app/base.html" %} {% load static %} {% block content %}
+   <!--//=========Login Page Start=========//-->
+   <section class="page_single">
+    <div class="container">
+        <div class="row padTB100">
+            <!--//==Section Heading Start==//-->
+            <div class="col-md-12">
+                <div class="centered-title">
+                    <h2>Sign In <span class="heading-border"></span></h2>
+                    <div class="clear"></div>
+                    <em>doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo <br>inventore veritatis et quasi architecto beatae</em>
+                </div>
+            </div>
+            <!--//==Section Heading End==//-->
+            <div class="clear"></div>
+            <!--//==Login Section Start==//-->
+            <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2 col-xs-offset-0">
+                <!--//==Form Start==//-->
+                <form action="#" method="post" class="login-form">
+                    <p class="form-row pd-right">
+                        <label for="username">Username or email <span class="required">*</span></label>
+                        <input type="text" name="username" id="username" class="form-controller">
+                    </p>
+                    <p class="form-row pd-left">
+                        <label for="password">Passwords <span class="required">*</span></label>
+                        <input type="password" name="password" id="password" class="form-controller">
+                    </p>
+                    <p class="form-row">
+                        <label class="inline" for="rememberme">
+                        <input type="checkbox" value="forever" id="rememberme" name="rememberme"> Remember me		
+                        </label>
+                    </p>
+                    <p class="form-row">
+                        <input type="submit" value="Login" name="login" class="theme-button col-md-12 marB20">                           
+                    </p>
+                    <p class="lost_password">
+                        <a href="#">Lost your password?</a>
+                    </p>
+                </form>
+                <!--//==Form End==//-->
+            </div>
+            <!--//==Login Section End==//-->
+        </div>
+    </div>
+</section>
+<!--//=========Login Page End=========//-->
+
+{% endblock content %}
