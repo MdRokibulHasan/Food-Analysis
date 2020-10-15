@@ -4,6 +4,7 @@ from django.dispatch import receiver
 from django.db.models.signals import post_save
 
 
+
 class Profile(models.Model):
     gender_choices = (
         ('male', 'Male'),
@@ -14,6 +15,27 @@ class Profile(models.Model):
     gender = models.CharField(max_length=6, choices=gender_choices, blank=True, null=True)
     address = models.TextField(blank=True, null=True)
     birthday = models.DateField(blank=True, null=True)
+
+    def __str__(self):
+        return self.user.username
+
+
+class Product(models.Model):
+    name = models.CharField(max_length=15, blank=True, null=True)
+    price = models.IntegerField()
+    location = models.CharField(max_length=15, blank=True, null=True)
+    image = models.ImageField(upload_to='images/')
+
+    def __str__(self):
+        return self.name
+
+
+
+class Comment(models.Model):
+    user = models.ForeignKey(User,on_delete=models.DO_NOTHING)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    text = models.TextField(blank=True,null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.user.username

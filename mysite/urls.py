@@ -33,7 +33,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('about/', about, name="about"),
-    path('blog_single/', blog_single, name="blog_single"),
+    path('blog_single/<int:id>/', blog_single, name="blog_single"),
     path('signup/', signup, name="signup"),  
     path('add_post/', add_post, name="add_post"),
     path('user_profile/', user_profile, name="user_profile"),
